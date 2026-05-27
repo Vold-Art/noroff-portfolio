@@ -1,1 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+	--font-body: "Inter", sans-serif;
+	--font-display: "Libre Baskerville", serif;
+
+	--color-charcoal: #252525;
+	--color-page: #ffffff;
+	--color-ink: #000000;
+}

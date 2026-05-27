@@ -6,7 +6,121 @@
 		<title>Noroff Portfolio | Arnt Helge Vold</title>
 		<link href="./dist/output.css" rel="stylesheet" />
 	</head>
-	<body>
-		<h1 class="text-6xl font-bold">Hello</h1>
+
+	<body class="min-h-screen bg-charcoal font-body">
+		<header class="bg-charcoal px-6 py-10 text-white">
+			<a href="./index.html" class="mx-auto flex w-fit flex-col items-center">
+				<img
+					src="./assets/images/vold-logo-white.png"
+					alt="Vold Art logo"
+					class="h-auto w-[250px]"
+				/>
+				<p class="text-center text-2xl font-extralight">Arnt Helge Vold</p>
+			</a>
+		</header>
+
+		<main class="bg-page px-8 py-12 sm:px-10 sm:py-16 lg:px-12 text-charcoal">
+			<section class="mx-auto max-w-6xl text-center">
+				<p class="mb-4 text-sm uppercase tracking-[0.35em]">
+					Frontend Development Portfolio
+				</p>
+
+				<h1
+					class="font-display text-4xl md:text-5xl font-normal leading-tight tracking-tight"
+				>
+					Noroff Portfolio
+				</h1>
+
+				<p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed">
+					A curated selection of frontend development projects created during my
+					studies at Noroff.
+				</p>
+				<section class="mx-auto mt-16 max-w-6xl">
+					<div class="mx-auto hidden max-w-[900px] md:flex md:flex-col">
+						<a
+							href="./css-frameworks.html"
+							class="group relative block h-[340px] overflow-hidden ml-15 transition duration-300 hover:-translate-x-6"
+							style="
+								clip-path: polygon(
+									0 0,
+									22% 8%,
+									48% 0,
+									74% 14%,
+									100% 50%,
+									70% 82%,
+									42% 100%,
+									18% 92%,
+									0 100%
+								);
+							"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt="CSS Frameworks project preview"
+								class="h-full w-full object-cover"
+							/>
+
+							<div
+								class="absolute inset-0 flex flex-col justify-center bg-charcoal/80 pl-8 text-left text-white opacity-0 transition duration-300 group-hover:opacity-100"
+							>
+								<h2 class="font-display text-4xl">CSS Frameworks</h2>
+								<p class="mt-4 max-w-[320px] leading-relaxed">
+									A responsive frontend project focused on layout, structure and
+									styling.
+								</p>
+							</div>
+						</a>
+
+						<a
+							href="./javascript-frameworks.html"
+							class="group relative block h-[340px] overflow-hidden -mt-[50px] mr-30 transition duration-300 hover:translate-x-6"
+							style="clip-path: polygon(100% 0, 0 50%, 100% 100%)"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt="JavaScript Frameworks project preview"
+								class="h-full w-full object-cover"
+							/>
+
+							<div
+								class="absolute inset-0 flex flex-col items-end justify-center bg-charcoal/80 pr-8 text-right text-white opacity-0 transition duration-300 group-hover:opacity-100"
+							>
+								<h2 class="font-display text-4xl">JavaScript Frameworks</h2>
+								<p class="mt-4 max-w-[320px] leading-relaxed">
+									A dynamic frontend project involving application logic and
+									interactions.
+								</p>
+							</div>
+						</a>
+
+						<a
+							href="./semester-project-2.html"
+							class="group relative block h-[340px] overflow-hidden -mt-[50px] ml-45 transition duration-300 hover:-translate-x-6"
+							style="clip-path: polygon(0 0, 100% 50%, 0 100%)"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt="Semester Project 2 preview"
+								class="h-full w-full object-cover"
+							/>
+
+							<div
+								class="absolute inset-0 flex flex-col justify-center bg-charcoal/80 pl-8 text-left text-white opacity-0 transition duration-300 group-hover:opacity-100"
+							>
+								<h2 class="font-display text-4xl">Semester Project 2</h2>
+								<p class="mt-4 max-w-[320px] leading-relaxed">
+									A larger project combining design, frontend development and
+									user experience.
+								</p>
+							</div>
+						</a>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<footer class="bg-charcoal px-6 py-8 text-center text-sm text-white">
+			<p>&copy; 2026 Arnt Helge Vold</p>
+		</footer>
 	</body>
 </html>
