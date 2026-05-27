@@ -1,0 +1,25 @@
+{
+	"name": "noroff-portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio website showcasing selected Noroff frontend development projects.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+		"build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Vold-Art/noroff-portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Vold-Art/noroff-portfolio/issues"
+	},
+	"homepage": "https://github.com/Vold-Art/noroff-portfolio#readme",
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.3.0",
+		"tailwindcss": "^4.3.0"
+	}
+}
