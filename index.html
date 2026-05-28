@@ -35,136 +35,314 @@
 
 						<a
 							href="./css-frameworks.html"
-							class="absolute left-0 top-0 h-[350px] w-[800px] overflow-hidden border"
-							style="
-								clip-path: polygon(
-									0 0,
-									100% 0,
-
-									95% 30%,
-									45% 85%,
-									33% 85%,
-									20% 100%,
-									12% 90%,
-
-									0 90%
-								);
-								transform: translate(10px, 10px);
-							"
+							class="pointer-events-none absolute inset-0 z-30"
 						>
-							<img
-								src="./assets/images/template.webp"
-								alt="CSS Frameworks project preview"
-								class="h-full w-full object-cover"
-							/>
-						</a>
+							<div
+								class="css-big pointer-events-auto absolute left-0 top-0 h-[350px] w-[800px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0 0,
+										100% 0,
+										95% 30%,
+										45% 85%,
+										33% 85%,
+										20% 100%,
+										12% 90%,
+										0 90%
+									);
+									transform: translate(10px, 10px);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.css-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
 
-						<a
-							href="#"
-							class="absolute top-0 right-[105px] h-[110px] w-[280px] overflow-hidden border"
-							style="
-								clip-path: polygon(20% 0, 100% 0%, 7% 88%);
-								transform: translate(0, 10px);
-							"
-						>
-							<img
-								src="./assets/images/template.webp"
-								alt=""
-								class="h-full w-full object-cover"
-							/>
-						</a>
+									document.querySelector('.css-big').style.transform =
+										'translate(10px, -35px)';
+									document.querySelector('.css-top').style.transform =
+										'translate(10px, -15px)';
+									document.querySelector('.css-middle').style.transform =
+										'translate(-25px, -50%)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.css-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
 
-						<a
-							href="#"
-							class="absolute right-0 top-0 h-[140px] w-[350px] overflow-hidden border"
-							style="
-								clip-path: polygon(
-									80% 0,
+									document.querySelector('.css-big').style.transform =
+										'translate(10px, 10px)';
+									document.querySelector('.css-top').style.transform =
+										'translate(0, 10px)';
+									document.querySelector('.css-middle').style.transform =
+										'translate(10px, -33%)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="CSS Frameworks project preview"
+									class="h-full w-full object-cover"
+								/>
 
-									100% 0,
+								<div
+									class="css-overlay absolute inset-0 flex flex-col justify-center bg-charcoal/80 p-8 text-left text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">CSS Frameworks</h2>
 
-									100% 70%,
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A responsive frontend project focused on layout, structure
+										and styling.
+									</p>
+								</div>
+							</div>
 
-									82% 70%,
-									45% 98%,
+							<div
+								class="css-top pointer-events-auto absolute top-0 right-[105px] h-[110px] w-[280px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(20% 0, 97% 0%, 7% 90%);
+									transform: translate(0, 10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
 
-									4% 75%
-								);
-								transform: translate(-10px, 10px);
-							"
-						>
-							<img
-								src="./assets/images/template.webp"
-								alt=""
-								class="h-full w-full object-cover"
-							/>
+								<div
+									class="css-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="css-middle pointer-events-auto absolute left-0 top-1/2 h-[110px] w-[152px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(0 0, 60% 0%, 100% 30%, 35% 45%, 0 100%);
+									transform: translate(10px, -33%);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<div
+									class="css-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
 						</a>
 
 						<a
 							href="./semester-project-2.html"
-							class="absolute left-0 bottom-0 h-[360px] w-[800px] overflow-hidden border"
-							style="
-								clip-path: polygon(
-									0 25%,
-									7% 7%,
-									20% 1%,
-									85% 26%,
-
-									100% 100%,
-									0 100%
-								);
-								transform: translate(10px, -10px);
-							"
+							class="pointer-events-none absolute inset-0"
 						>
-							<img
-								src="./assets/images/template.webp"
-								alt="Semester Project 2 preview"
-								class="h-full w-full object-cover"
-							/>
-						</a>
+							<div
+								class="semester-big pointer-events-auto absolute left-0 bottom-0 h-[360px] w-[800px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0 25%,
+										7% 7%,
+										20% 1%,
+										85% 26%,
+										100% 100%,
+										0 100%
+									);
+									transform: translate(10px, -10px);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.semester-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
 
-						<a
-							href="#"
-							class="absolute left-0 top-1/2 h-[110px] w-[152px] overflow-hidden border"
-							style="
-								clip-path: polygon(0 0, 60% 0%, 100% 30%, 35% 45%, 0 100%);
-								transform: translate(10px, -33%);
-							"
-						>
-							<img
-								src="./assets/images/template.webp"
-								alt=""
-								class="h-full w-full object-cover"
-							/>
+									document.querySelector('.semester-big').style.transform =
+										'translate(-15px, 35px)';
+
+									document.querySelector(
+										'.semester-small-one',
+									).style.transform = 'translate(-20px, 15px)';
+
+									document.querySelector(
+										'.semester-small-two',
+									).style.transform = 'translate(0px, 20px)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.semester-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
+
+									document.querySelector('.semester-big').style.transform =
+										'translate(10px, -10px)';
+
+									document.querySelector(
+										'.semester-small-one',
+									).style.transform = 'translate(0, -10px)';
+
+									document.querySelector(
+										'.semester-small-two',
+									).style.transform = 'translate(0, 0)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="Semester Project 2 preview"
+									class="h-full w-full object-cover"
+								/>
+
+								<div
+									class="semester-overlay absolute inset-0 flex flex-col justify-center bg-charcoal/80 p-8 text-left text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">Semester Project 2</h2>
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A larger project combining design, frontend development and
+										user experience.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="semester-small-one pointer-events-auto absolute bottom-0 right-[178px] h-[120px] w-[200px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(4% 20%, 100% 100%, 25% 100%);
+									transform: translate(0, -10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+								<div
+									class="semester-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="semester-small-two pointer-events-auto absolute bottom-[10px] right-[20px] h-[265px] w-[440px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(19% 56%, 3% 0, 35% 8%, 98% 100%, 72% 100%);
+									transform: translate(0, 0);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+								<div
+									class="semester-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
 						</a>
 
 						<a
 							href="./javascript-frameworks.html"
-							class="absolute right-0 top-1/2 h-[500px] w-[960px] overflow-hidden border"
-							style="
-								clip-path: polygon(
-									0% 49%,
-
-									10% 40%,
-									20% 40%,
-									63% 0%,
-									80% 8%,
-									94% 0%,
-
-									100% 0,
-									100% 100%,
-
-									88% 100%,
-									70% 71%
-								);
-								transform: translate(-10px, -50%);
-							"
+							class="pointer-events-none absolute inset-0"
 						>
-							<img
-								src="./assets/images/template.webp"
-								alt="JavaScript Frameworks project preview"
-								class="h-full w-full object-cover"
-							/>
+							<div
+								class="js-big pointer-events-auto absolute right-0 top-1/2 h-[500px] w-[960px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0% 49%,
+										10% 40%,
+										20% 40%,
+										63% 0%,
+										80% 8%,
+										94% 0%,
+										100% 0,
+										100% 100%,
+										88% 100%,
+										70% 71%
+									);
+									transform: translate(-10px, -50%);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.js-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
+
+									document.querySelector('.js-big').style.transform =
+										'translate(35px, -50%)';
+
+									document.querySelector('.js-top').style.transform =
+										'translate(35px, -5px)';
+
+									document.querySelector('.js-corner').style.transform =
+										'translate(20px, 10px)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.js-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
+
+									document.querySelector('.js-big').style.transform =
+										'translate(-10px, -50%)';
+
+									document.querySelector('.js-top').style.transform =
+										'translate(-10px, 10px)';
+
+									document.querySelector('.js-corner').style.transform =
+										'translate(-10px, -10px)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="JavaScript Frameworks project preview"
+									class="h-full w-full object-cover"
+								/>
+
+								<div
+									class="js-overlay absolute inset-0 flex flex-col items-end justify-center bg-charcoal/80 p-8 text-right text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">JavaScript Frameworks</h2>
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A dynamic frontend project involving application logic and
+										interactions.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="js-corner pointer-events-auto absolute bottom-0 right-0 h-[100px] w-[110px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(0% 0%, 100% 0, 100% 100%);
+									transform: translate(-10px, -10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<div
+									class="js-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="js-top pointer-events-auto absolute right-0 top-0 h-[140px] w-[350px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										80% 0,
+										100% 0,
+										100% 70%,
+										82% 70%,
+										45% 97%,
+										5% 75%
+									);
+									transform: translate(-10px, 10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<div
+									class="js-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
 						</a>
 					</div>
 				</section>
