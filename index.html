@@ -19,7 +19,9 @@
 			</a>
 		</header>
 
-		<main class="bg-page px-8 py-12 sm:px-10 sm:py-16 lg:px-12 text-charcoal">
+		<main
+			class="bg-red-400 px-8 py-12 sm:px-10 sm:py-16 lg:px-12 text-charcoal"
+		>
 			<section class="mx-auto max-w-6xl text-center">
 				<h1 class="mb-4 text-sm uppercase tracking-[0.35em]">
 					Frontend Development Portfolio
@@ -27,27 +29,27 @@
 
 				<section class="mx-auto mt-16 max-w-6xl">
 					<div
-						class="relative mx-auto hidden min-h-[720px] max-w-[1600px] md:flex md:flex-col justify-center"
+						class="relative mx-auto hidden h-[740px] max-w-[1200px] md:block"
 					>
-						<div
-							class="pointer-events-none absolute left-1/2 top-1/2 h-[850px] w-[950px] -translate-x-1/2 -translate-y-1/2 border-[2.5px] border-charcoal"
-						></div>
+						<div class="absolute inset-0 border-[3px] border-charcoal"></div>
 
 						<a
 							href="./css-frameworks.html"
-							class="group relative block h-[340px] w-[1050px] overflow-hidden mx-auto -translate-x-15 transition duration-300 hover:-translate-x-[7.5rem]"
+							class="absolute left-0 top-0 h-[350px] w-[800px] overflow-hidden border"
 							style="
 								clip-path: polygon(
 									0 0,
-									25% 10%,
-									50% 5%,
-									75% 40%,
-									100% 50%,
-									75% 75%,
-									50% 70%,
-									25% 100%,
-									0 100%
+									100% 0,
+
+									95% 30%,
+									45% 85%,
+									33% 85%,
+									20% 100%,
+									12% 90%,
+
+									0 90%
 								);
+								transform: translate(10px, 10px);
 							"
 						>
 							<img
@@ -55,93 +57,63 @@
 								alt="CSS Frameworks project preview"
 								class="h-full w-full object-cover"
 							/>
-
-							<div
-								class="absolute inset-0 flex flex-col justify-center bg-charcoal/80 pl-8 text-left text-white opacity-0 transition duration-300 group-hover:opacity-100"
-							>
-								<h2 class="font-display text-4xl">CSS Frameworks</h2>
-								<p class="mt-4 max-w-[320px] leading-relaxed">
-									A responsive frontend project focused on layout, structure and
-									styling.
-								</p>
-							</div>
-
-							<svg
-								class="pointer-events-none absolute inset-0 h-full w-full"
-								viewBox="0 0 1050 340"
-								preserveAspectRatio="none"
-							>
-								<polygon
-									points="0,0 262.5,34 525,17 787.5,136 1050,170 787.5,255 525,238 262.5,340 0,340"
-									fill="none"
-									stroke="#252525"
-									stroke-width="5"
-								/>
-							</svg>
 						</a>
 
 						<a
-							href="./javascript-frameworks.html"
-							class="group relative block h-[340px] w-[1050px] overflow-hidden -mt-[100px] mx-auto translate-x-25 transition duration-300 hover:translate-x-[7.5rem]"
+							href="#"
+							class="absolute top-0 right-[105px] h-[110px] w-[280px] overflow-hidden border"
 							style="
-								clip-path: polygon(
-									100% 0,
-									75% 15%,
-									50% 10%,
-									25% 40%,
-									0 50%,
-									25% 75%,
-									50% 70%,
-									75% 95%,
-									100% 100%
-								);
+								clip-path: polygon(20% 0, 100% 0%, 7% 88%);
+								transform: translate(0, 10px);
 							"
 						>
 							<img
 								src="./assets/images/template.webp"
-								alt="JavaScript Frameworks project preview"
+								alt=""
 								class="h-full w-full object-cover"
 							/>
+						</a>
 
-							<div
-								class="absolute inset-0 flex flex-col items-end justify-center bg-charcoal/80 pr-8 text-right text-white opacity-0 transition duration-300 group-hover:opacity-100"
-							>
-								<h2 class="font-display text-4xl">JavaScript Frameworks</h2>
-								<p class="mt-4 max-w-[320px] leading-relaxed">
-									A dynamic frontend project involving application logic and
-									interactions.
-								</p>
-							</div>
+						<a
+							href="#"
+							class="absolute right-0 top-0 h-[140px] w-[350px] overflow-hidden border"
+							style="
+								clip-path: polygon(
+									80% 0,
 
-							<svg
-								class="pointer-events-none absolute inset-0 h-full w-full"
-								viewBox="0 0 1050 340"
-								preserveAspectRatio="none"
-							>
-								<polygon
-									points="1050,0 787.5,51 525,34 262.5,136 0,170 262.5,255 525,238 787.5,323 1050,340"
-									fill="none"
-									stroke="#252525"
-									stroke-width="5"
-								/>
-							</svg>
+									100% 0,
+
+									100% 70%,
+
+									82% 70%,
+									45% 98%,
+
+									4% 75%
+								);
+								transform: translate(-10px, 10px);
+							"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt=""
+								class="h-full w-full object-cover"
+							/>
 						</a>
 
 						<a
 							href="./semester-project-2.html"
-							class="group relative block h-[340px] w-[1050px] overflow-hidden -mt-[100px] mx-auto -translate-x-5 transition duration-300 hover:-translate-x-[7.5rem]"
+							class="absolute left-0 bottom-0 h-[360px] w-[800px] overflow-hidden border"
 							style="
 								clip-path: polygon(
-									0 0,
-									25% 20%,
-									50% 15%,
-									75% 45%,
-									100% 50%,
-									75% 90%,
-									50% 80%,
-									25% 90%,
+									0 25%,
+									7% 7%,
+									20% 1%,
+									85% 26%,
+
+									100% 100%,
 									0 100%
 								);
+								transform: translate(10px, -10px);
 							"
 						>
 							<img
@@ -149,29 +121,50 @@
 								alt="Semester Project 2 preview"
 								class="h-full w-full object-cover"
 							/>
+						</a>
 
-							<div
-								class="absolute inset-0 flex flex-col justify-center bg-charcoal/80 pl-8 text-left text-white opacity-0 transition duration-300 group-hover:opacity-100"
-							>
-								<h2 class="font-display text-4xl">Semester Project 2</h2>
-								<p class="mt-4 max-w-[320px] leading-relaxed">
-									A larger project combining design, frontend development and
-									user experience.
-								</p>
-							</div>
+						<a
+							href="#"
+							class="absolute left-0 top-1/2 h-[110px] w-[152px] overflow-hidden border"
+							style="
+								clip-path: polygon(0 0, 60% 0%, 100% 30%, 35% 45%, 0 100%);
+								transform: translate(10px, -33%);
+							"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt=""
+								class="h-full w-full object-cover"
+							/>
+						</a>
 
-							<svg
-								class="pointer-events-none absolute inset-0 h-full w-full"
-								viewBox="0 0 1050 340"
-								preserveAspectRatio="none"
-							>
-								<polygon
-									points="0,0 262.5,68 525,51 787.5,153 1050,170 787.5,306 525,272 262.5,306 0,340"
-									fill="none"
-									stroke="#252525"
-									stroke-width="5"
-								/>
-							</svg>
+						<a
+							href="./javascript-frameworks.html"
+							class="absolute right-0 top-1/2 h-[500px] w-[960px] overflow-hidden border"
+							style="
+								clip-path: polygon(
+									0% 49%,
+
+									10% 40%,
+									20% 40%,
+									63% 0%,
+									80% 8%,
+									94% 0%,
+
+									100% 0,
+									100% 100%,
+
+									88% 100%,
+									70% 71%
+								);
+								transform: translate(-10px, -50%);
+							"
+						>
+							<img
+								src="./assets/images/template.webp"
+								alt="JavaScript Frameworks project preview"
+								class="h-full w-full object-cover"
+							/>
 						</a>
 					</div>
 				</section>
