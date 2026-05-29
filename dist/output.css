@@ -609,6 +609,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
+  }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
   }
@@ -671,6 +674,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
   }
   .-ml-0 {
     margin-left: calc(var(--spacing) * -0);
@@ -1436,11 +1442,20 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
+  }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
   }
   .pr-16 {
     padding-right: calc(var(--spacing) * 16);
+  }
+  .pb-32 {
+    padding-bottom: calc(var(--spacing) * 32);
   }
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
@@ -1980,6 +1995,16 @@
   .sm\:py-16 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 16);
+    }
+  }
+  .sm\:pt-28 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 28);
+    }
+  }
+  .sm\:pb-36 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 36);
     }
   }
   .md\:block {

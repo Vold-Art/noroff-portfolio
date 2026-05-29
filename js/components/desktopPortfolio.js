@@ -1,0 +1,554 @@
+function injectDesktopPortfolio() {
+	const mount = document.querySelector("#desktop-portfolio-mount");
+
+	if (!mount) return;
+
+	mount.innerHTML = `
+		<section class="mx-auto max-w-6xl text-center">
+				<section class="relative z-20 mx-auto mt-16 max-w-6xl">
+					<div
+						class="relative mx-auto hidden h-[740px] max-w-[1200px] md:block"
+					>
+						<div
+							class="absolute inset-0 bg-page border-[3px] border-charcoal"
+						></div>
+
+						<div class="absolute left-[251px] top-[-55px]">
+							<div class="bg-page border-[3px] border-charcoal w-[650px] py-3">
+								<h1 class="text-center text-lg uppercase tracking-[0.35em]">
+									Frontend Development Portfolio
+								</h1>
+							</div>
+						</div>
+
+						<a
+							href="./css-frameworks.html"
+							class="pointer-events-none absolute inset-0 z-30"
+						>
+							<div
+								class="css-big pointer-events-auto absolute left-0 top-0 h-[350px] w-[800px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0 0,
+										100% 0,
+										95% 30%,
+										45% 85%,
+										33% 85%,
+										20% 100%,
+										12% 90%,
+										0 90%
+									);
+									transform: translate(10px, 10px);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.css-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
+
+									document.querySelector('.css-big').style.transform =
+										'translate(10px, -35px)';
+									document.querySelector('.css-top').style.transform =
+										'translate(10px, -15px)';
+									document.querySelector('.css-middle').style.transform =
+										'translate(-25px, -50%)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.css-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
+
+									document.querySelector('.css-big').style.transform =
+										'translate(10px, 10px)';
+									document.querySelector('.css-top').style.transform =
+										'translate(0, 10px)';
+									document.querySelector('.css-middle').style.transform =
+										'translate(10px, -33%)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="CSS Frameworks project preview"
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 800 350"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+												0,0
+												800,0
+												760,105
+												360,297.5
+												264,297.5
+												160,350
+												96,315
+												0,315
+												"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="css-overlay absolute inset-0 flex flex-col justify-center bg-charcoal/80 p-8 text-left text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">CSS Frameworks</h2>
+
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A responsive frontend project focused on layout, structure
+										and styling.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="css-top pointer-events-auto absolute top-0 right-[105px] h-[110px] w-[280px] overflow-hidden transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(20% 0, 97% 0%, 7% 90%);
+									transform: translate(0, 10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 280 110"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+												56,0
+												271.6,0
+												19.6,99
+												"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="css-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="css-middle pointer-events-auto absolute left-0 top-1/2 h-[110px] w-[152px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(0 0, 60% 0%, 100% 30%, 35% 45%, 0 100%);
+									transform: translate(10px, -33%);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 152 110"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+												0,0
+												91.2,0
+												152,33
+												53.2,49.5
+												0,110
+												"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="css-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+						</a>
+
+						<a
+							href="./semester-project-2.html"
+							class="pointer-events-none absolute inset-0"
+						>
+							<div
+								class="semester-big pointer-events-auto absolute left-0 bottom-0 h-[360px] w-[800px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0 25%,
+										7% 7%,
+										20% 1%,
+										85% 26%,
+										100% 100%,
+										0 100%
+									);
+									transform: translate(10px, -10px);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.semester-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
+
+									document.querySelector('.semester-big').style.transform =
+										'translate(-15px, 35px)';
+
+									document.querySelector(
+										'.semester-small-one',
+									).style.transform = 'translate(-20px, 15px)';
+
+									document.querySelector(
+										'.semester-small-two',
+									).style.transform = 'translate(0px, 20px)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.semester-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
+
+									document.querySelector('.semester-big').style.transform =
+										'translate(10px, -10px)';
+
+									document.querySelector(
+										'.semester-small-one',
+									).style.transform = 'translate(0, -10px)';
+
+									document.querySelector(
+										'.semester-small-two',
+									).style.transform = 'translate(0, 0)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="Semester Project 2 preview"
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 800 360"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+												0,90
+												56,25.2
+												160,3.6
+												680,93.6
+												800,360
+												0,360
+												"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="semester-overlay absolute inset-0 flex flex-col justify-center bg-charcoal/80 p-8 text-left text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">Semester Project 2</h2>
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A larger project combining design, frontend development and
+										user experience.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="semester-small-one pointer-events-auto absolute bottom-0 right-[178px] h-[120px] w-[200px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(4% 20%, 100% 100%, 25% 100%);
+									transform: translate(0, -10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 200 120"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+											8,24
+											200,120
+											50,120
+											"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="semester-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="semester-small-two pointer-events-auto absolute bottom-[10px] right-[20px] h-[265px] w-[440px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(19% 56%, 3% 0, 35% 8%, 98% 100%, 72% 100%);
+									transform: translate(0, 0);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 440 265"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+											83.6,148.4
+											13.2,0
+											154,21.2
+											431.2,265
+											316.8,265
+											"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="semester-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+						</a>
+
+						<a
+							href="./javascript-frameworks.html"
+							class="pointer-events-none absolute inset-0"
+						>
+							<div
+								class="js-big pointer-events-auto absolute right-0 top-1/2 h-[500px] w-[960px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										0% 49%,
+										10% 40%,
+										20% 40%,
+										63% 0%,
+										80% 8%,
+										94% 0%,
+										100% 0,
+										100% 100%,
+										88% 100%,
+										70% 71%
+									);
+									transform: translate(-10px, -50%);
+								"
+								onmouseenter="
+									document
+										.querySelectorAll('.js-overlay')
+										.forEach((el) => (el.style.opacity = '1'));
+
+									document.querySelector('.js-big').style.transform =
+										'translate(35px, -50%)';
+
+									document.querySelector('.js-top').style.transform =
+										'translate(35px, -5px)';
+
+									document.querySelector('.js-corner').style.transform =
+										'translate(20px, 10px)';
+								"
+								onmouseleave="
+									document
+										.querySelectorAll('.js-overlay')
+										.forEach((el) => (el.style.opacity = '0'));
+
+									document.querySelector('.js-big').style.transform =
+										'translate(-10px, -50%)';
+
+									document.querySelector('.js-top').style.transform =
+										'translate(-10px, 10px)';
+
+									document.querySelector('.js-corner').style.transform =
+										'translate(-10px, -10px)';
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt="JavaScript Frameworks project preview"
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 960 500"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+											0,245
+											96,200
+											192,200
+											604.8,0
+											768,40
+											902.4,0
+											960,0
+											960,500
+											844.8,500
+											672,355
+											"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="js-overlay absolute inset-0 flex flex-col items-end justify-center bg-charcoal/80 p-8 text-right text-white opacity-0 transition-opacity duration-500 ease-out"
+								>
+									<h2 class="font-display text-4xl">JavaScript Frameworks</h2>
+									<p class="mt-4 max-w-[320px] leading-relaxed">
+										A dynamic frontend project involving application logic and
+										interactions.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="js-corner pointer-events-auto absolute bottom-0 right-0 h-[100px] w-[110px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(0% 0%, 100% 0, 100% 100%);
+									transform: translate(-10px, -10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 110 100"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+											0,0
+											110,0
+											110,100
+											"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="js-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+
+							<div
+								class="js-top pointer-events-auto absolute right-0 top-0 h-[140px] w-[350px] overflow-hidden border transition-transform duration-500 ease-out"
+								style="
+									clip-path: polygon(
+										80% 0,
+										100% 0,
+										100% 70%,
+										82% 70%,
+										45% 97%,
+										5% 75%
+									);
+									transform: translate(-10px, 10px);
+								"
+							>
+								<img
+									src="./assets/images/template.webp"
+									alt=""
+									class="h-full w-full object-cover"
+								/>
+
+								<svg
+									class="pointer-events-none absolute inset-0 h-full w-full"
+									viewBox="0 0 350 140"
+									preserveAspectRatio="none"
+								>
+									<polygon
+										points="
+											280,0
+											350,0
+											350,98
+											287,98
+											157.5,135.8
+											17.5,105
+											"
+										fill="none"
+										stroke="#252525"
+										stroke-width="5"
+										vector-effect="non-scaling-stroke"
+									/>
+								</svg>
+
+								<div
+									class="js-overlay absolute inset-0 bg-charcoal/80 opacity-0 transition-opacity duration-500 ease-out"
+								></div>
+							</div>
+						</a>
+					</div>
+				</section>
+			</section>
+			<section
+				class="pointer-events-none relative z-0 mx-auto -mt-[850px] -mb-[0px] h-[900px] w-[1400px]"
+			>
+				<div class="relative h-[940px] w-[1400px] overflow-visible">
+					<svg
+						class="absolute inset-0 h-full w-full"
+						viewBox="0 0 1400 940"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="
+					M700 5
+					L1395 740
+					L5 200
+					L700 935
+					L1395 200
+					L5 740
+					Z
+				"
+							stroke="#252525"
+							stroke-width="3"
+							fill="none"
+						/>
+					</svg>
+				</div>
+			</section>
+	`;
+}
+
+injectDesktopPortfolio();
