@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Noroff Portfolio | Arnt Helge Vold</title>
 		<link href="./dist/output.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/0c6f9a3b2b.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body class="min-h-screen bg-charcoal font-body">
@@ -27,8 +31,66 @@
 			</div>
 		</main>
 
-		<footer class="bg-charcoal px-6 py-8 text-center text-sm text-white">
-			<p>&copy; 2026 Arnt Helge Vold</p>
+		<footer
+			class="w-full bg-charcoal text-white border-t border-white/10 py-14"
+		>
+			<div class="mx-auto max-w-[1420px] px-8">
+				<div
+					class="grid grid-cols-1 gap-10 md:grid-cols-3 md:items-center md:gap-0"
+				>
+					<section class="flex justify-center">
+						<a
+							href="https://www.vold-art.com"
+							class="text-[16px] font-extralight text-white hover:opacity-70 transition-opacity"
+						>
+							Vold Art
+						</a>
+					</section>
+
+					<section class="flex justify-center">
+						<h2 class="sr-only">Social links</h2>
+
+						<div class="flex items-center justify-center gap-12">
+							<a
+								href="https://www.instagram.com/ahvoldart/"
+								aria-label="Instagram"
+								class="hover:opacity-70 transition-opacity"
+							>
+								<i class="fa-brands fa-instagram text-[32px]"></i>
+							</a>
+
+							<a
+								href="mailto:vold1@live.no"
+								aria-label="Email"
+								class="hover:opacity-70 transition-opacity"
+							>
+								<i class="fa-solid fa-envelope text-[30px]"></i>
+							</a>
+
+							<a
+								href="https://www.facebook.com/arnt.vold/"
+								aria-label="Facebook"
+								class="hover:opacity-70 transition-opacity"
+							>
+								<i class="fa-brands fa-facebook text-[30px]"></i>
+							</a>
+						</div>
+					</section>
+
+					<section class="flex justify-center">
+						<a
+							href="https://github.com/Vold-Art"
+							class="text-[16px] font-extralight text-white hover:opacity-70 transition-opacity"
+						>
+							GitHub Profile
+						</a>
+					</section>
+				</div>
+
+				<p class="mt-10 text-center text-[16px] font-extralight text-white">
+					© 2026 · Arnt Helge Vold
+				</p>
+			</div>
 		</footer>
 
 		<script type="module" src="./js/components/desktopPortfolio.js"></script>
