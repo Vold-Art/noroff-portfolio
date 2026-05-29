@@ -1439,6 +1439,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
@@ -1985,6 +1988,16 @@
   .focus-visible\:ring-charcoal {
     &:focus-visible {
       --tw-ring-color: var(--color-charcoal);
+    }
+  }
+  .min-\[1450px\]\:block {
+    @media (width >= 1450px) {
+      display: block;
+    }
+  }
+  .min-\[1450px\]\:hidden {
+    @media (width >= 1450px) {
+      display: none;
     }
   }
   .sm\:px-10 {

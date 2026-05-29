@@ -4,6 +4,7 @@ function injectDesktopPortfolio() {
 	if (!mount) return;
 
 	mount.innerHTML = `
+	<section class="hidden min-[1450px]:block">
 		<section class="mx-auto max-w-6xl text-center">
 				<section class="relative z-20 mx-auto mt-16 max-w-6xl">
 					<div
@@ -548,6 +549,7 @@ function injectDesktopPortfolio() {
 					</svg>
 				</div>
 			</section>
+	</section>
 	`;
 }
 
